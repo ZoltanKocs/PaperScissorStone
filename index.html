@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./style.css">
     <title>Ideme Hrať!</title>
 </head>
 <body>
+    <h1>Kameň -- Papier -- Nožnice</h1>
+    
+    <div class="volba">
 
+        <button onclick="hratHru('kamen')">Kameň</button>
+        <button onclick="hratHru('papier')">Papier</button>
+        <button onclick="hratHru('noznice')">Nožnice</button>
 
+    </div>
 
+    <div id="hracDisplej">HRÁČ: </div>
+    <div id="pocitacDisplej">POČÍTAČ: </div>
+    <div id="vysledokDisplej"> </div>
 
+    <div id="displejSkorovanie">HRÁČ skóroval:
+        <span id="displejSkorovanieHraca">0</span>
+    </div>
+    <div id="displejSkorovanie">POČÍTAČ skóroval:
+        <span id="displejSkorovaniePocitaca">0</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
